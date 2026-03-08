@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InvoiceFlow | Premium Generator</title>
+  </head>
+  <body>
+    <div id="app" class="app-container">
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <i data-lucide="receipt"></i>
+          <span>InvoiceFlow</span>
+        </div>
+        
+        <nav class="nav-menu">
+          <a href="#" class="nav-item active" data-view="create">
+            <i data-lucide="plus-circle"></i>
+            <span>Create Invoice</span>
+          </a>
+          <a href="#" class="nav-item" data-view="history">
+            <i data-lucide="history"></i>
+            <span>History</span>
+          </a>
+          <div id="user-email-display" class="nav-item" style="margin-top: auto; color: var(--text-secondary); pointer-events: none; font-size: 0.85rem; word-break: break-all; padding-left: 0.75rem;">
+            <!-- Email injected by JS -->
+          </div>
+          <a href="#" class="nav-item" id="nav-sign-out" style="color: var(--danger-color);">
+            <i data-lucide="log-out"></i>
+            <span>Sign Out</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Workspace -->
+      <main class="main-content" id="main-content">
+        <!-- Content injected by JS -->
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <!-- html2pdf.js imported in JS since it is installed via npm -->
+  </body>
+</html>
